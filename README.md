@@ -8,3 +8,4 @@
   * `ConversionsOperations` - All about Datatype conversion operations
   * `Comparisons` - All about comparisons in JS
   * `Datatypes-wrap` - Wrapping up all about datatypes in JS
+  * `Strings` - All about strings
