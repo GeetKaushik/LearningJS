@@ -10,3 +10,4 @@
   * `Datatypes-wrap` - Wrapping up all about datatypes in JS
   * `Strings` - All about strings
   * `NumsMaths` - All about numbers and maths in JS
+  * `Dates` - All about dates and time in JS
