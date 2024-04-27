@@ -9,3 +9,4 @@
   * `Comparisons` - All about comparisons in JS
   * `Datatypes-wrap` - Wrapping up all about datatypes in JS
   * `Strings` - All about strings
+  * `NumsMaths` - All about numbers and maths in JS
