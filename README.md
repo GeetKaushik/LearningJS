@@ -11,3 +11,5 @@
   * `Strings` - All about strings
   * `NumsMaths` - All about numbers and maths in JS
   * `Dates` - All about dates and time in JS
+* ### MoreToBasics
+  * `Arrays` - All about arrays
