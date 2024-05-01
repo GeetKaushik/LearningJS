@@ -45,6 +45,34 @@ console.log(obj1['age'])
 obj1.greetings = function () {
   console.log(`Hello World, ${this.name}`)
 }
-console.log('----------------------------')
 console.log(obj1.greetings)
 console.log(obj1.greetings())
+
+console.log(`My City: ${obj1.address.city}`)
+console.log(`My City: ${obj1?.address.city}`) //Optional chaining
+
+console.log('----------------------------')
+// Constructor method
+// Object.create
+// const obj2 = new Object() // Singleton object
+// console.log(obj2)
+// console.log(typeof obj2)
+const obj3 = {} // Non-singleton object
+console.log(obj3)
+obj3.id = '123abc'
+obj3.name = 'Mukul'
+obj3.age = 21
+obj3.isLoggedIn = false
+console.log(obj3)
+
+const objA = { 1: 'a', 2: 'b' }
+const objB = { 3: 'c', 4: 'd' }
+
+const objC = { objA, objB } // Objects in object
+console.log(objC)
+
+const objD = Object.assign({}, objA, objB)
+console.log(objD)
+
+const objE = { ...objA, ...objB }
+console.log(objE)
