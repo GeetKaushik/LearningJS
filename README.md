@@ -13,3 +13,4 @@
   * `Dates` - All about dates and time in JS
 * ### MoreToBasics
   * `Arrays` - All about arrays
+  * `Objects` - All about objects
