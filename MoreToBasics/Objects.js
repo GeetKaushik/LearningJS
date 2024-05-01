@@ -71,8 +71,70 @@ const objB = { 3: 'c', 4: 'd' }
 const objC = { objA, objB } // Objects in object
 console.log(objC)
 
-const objD = Object.assign({}, objA, objB)
+const objD = Object.assign({}, objA, objB) // using Object.assign
 console.log(objD)
 
-const objE = { ...objA, ...objB }
+const objE = { ...objA, ...objB } // using spread operator
 console.log(objE)
+
+console.log(Object.keys(objE))
+console.log(Object.values(objE))
+console.log(Object.entries(objE)) // not used much
+
+console.log(objE.hasOwnProperty('1'))
+console.log(objE.hasOwnProperty('0'))
+
+console.log('------------------------------------')
+
+// Destructuring of objects
+
+const newObj1 = {
+  id: '123abc',
+  usrname: 'Geet',
+  age: 21,
+  isLoggedIn: false,
+}
+const newObj2 = {
+  id: '456edf',
+  usrname: 'Sanu',
+  age: 23,
+  isLoggedIn: true,
+}
+
+const { id, usrname, age, isLoggedIn } = newObj1
+// const { id, usrname, age, isLoggedIn } = newObj2 // No objects having same props can be destructured together
+const {
+  id: id2,
+  usrname: usrname2,
+  age: age2,
+  isLoggedIn: isLoggedIn2,
+} = newObj2 // using alias to remove conflicts in naming when destructuring objects
+
+console.log(id)
+console.log(id2)
+
+// A little bit about API(Application Programming Interface)
+// Earlier values were fetched in `.xml(Extensible Markup Language)` format which was complicated, thus replaced currently used `.json(JavaScript Object Notation)` format
+
+{
+  const newObj3 = {
+    id: '123abc',
+    usrname: 'Geet',
+    age: 21,
+    isLoggedIn: false,
+  }
+  const newObj4 = {
+    id: '456edf',
+    usrname: 'Sanu',
+    age: 23,
+    isLoggedIn: true,
+  }
+
+  const { id, usrname, age, isLoggedIn } = newObj3
+  const {
+    id: id2,
+    usrname: usrname2,
+    age: age2,
+    isLoggedIn: isLoggedIn2,
+  } = newObj4 // using alias to remove conflicts in naming when destructuring objects
+}
