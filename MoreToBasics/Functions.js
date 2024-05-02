@@ -1,3 +1,7 @@
+/**********************`Basics of Functions`*************************/
+//! NOTE: For more info -> `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions`
+//! NOTE: For more info -> `https://www.w3schools.com/js/js_functions.asp`
+
 function Hello(name) {
   console.log(`Hello,${name}`)
   console.log('I hope you are doing well with Learning')
@@ -49,12 +53,54 @@ console.log(userLogin(true)) // converted to string
 console.log(userLogin(null)) // converted to string
 console.log(userLogin(3)) // converted to string
 
-function userLogout(usrname = 'User') { // Default value
-  // if (usrname === undefined) { 
+function userLogout(usrname = 'User') {
+  // Default value
+  // if (usrname === undefined) {
   if (!usrname) {
     return `No user logged in 😾`
   }
   return `${usrname} Logged out`
 }
-console.log(userLogout());
-console.log(userLogout('Geet'));
+console.log(userLogout())
+console.log(userLogout('Geet'))
+Seprater()
+Seprater()
+
+/**********************`More to Functions`*************************/
+
+function Cart1(items) {
+  // Only takes first argument as parameter
+  return items
+}
+function Cart2(...items) {
+  // Here, `...` Rest operator is used to take multiple arguments in paramenter dynamically and return an object array
+  return items
+}
+
+console.log(Cart1('itm1', 'itm2', 'itm3'))
+console.log(typeof Cart1('itm1', 'itm2', 'itm3'))
+console.log(Cart2('itm1', 'itm2', 'itm3'))
+console.log(typeof Cart2('itm1', 'itm2', 'itm3'))
+
+const Obj1 = {
+  name: 'Geet',
+  age: 21,
+}
+function handleObj(params) {
+  console.log(`Hello ${params.name}, You are ${params.age}`)
+}
+// handleObj(Obj1)
+handleObj({
+  name: 'Mehek',
+  age: 21,
+})
+
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let i = 1
+
+function handleArr(params, i) {
+  return params[i]
+}
+
+console.log(`Value at index:${i} in ${arr1} is ${handleArr(arr1, i)}`)
+console.log(`Value at index:${3} is ${handleArr([1,2,3,4,5], 3)}`)
