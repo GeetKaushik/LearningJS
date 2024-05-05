@@ -17,3 +17,4 @@
   * `Functions` - All about functions
   * `Scopes` - All about scopes
   * `Arrow` - All about Arrow functions
+  * `IIFE` - All about Imediatly Invoked Functions Expressions
