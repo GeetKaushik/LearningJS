@@ -15,3 +15,4 @@
   * `Arrays` - All about arrays
   * `Objects` - All about objects
   * `Functions` - All about functions
+  * `Scopes` - All about scopes
