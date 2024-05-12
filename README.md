@@ -22,3 +22,7 @@
 - ### ControlFlow
   - `Conditionals` - All about conditionals
   - `Switch` - All about switch
+- ### Iterations
+  - `forLoop` - All about for loops
+  - `whileDowhileLoops` - All about while-dowhile loops
+  - `HighOrderArrayLoops` - All about high-order array loops
