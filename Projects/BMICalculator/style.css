@@ -1,0 +1,24 @@
+body {
+  background-color: #111;
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  border: #999 solid;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+form > button {
+  cursor: pointer;
+}

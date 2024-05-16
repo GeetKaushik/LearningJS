@@ -27,3 +27,6 @@
   - `whileDowhileLoops` - All about while-dowhile loops
   - `HighOrderArrayLoops` - All about high-order array loops
   - `DOM` - All about DOM
+- ### Projects
+  - `BgSwitcher` - A Simple Project for switching between background colors
+  - `BMICalculator` - A Simple Project for creating a BMI calculator
