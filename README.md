@@ -26,3 +26,4 @@
   - `forLoop` - All about for loops
   - `whileDowhileLoops` - All about while-dowhile loops
   - `HighOrderArrayLoops` - All about high-order array loops
+  - `DOM` - All about DOM

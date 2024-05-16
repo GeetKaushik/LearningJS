@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+    <style>
+      .bg-black {
+        background-color: #111;
+      }
+      .text-white {
+        color: #fff;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-red {
+        color: red;
+      }
+      .text-green {
+        color: green;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white text-center">
+    <!-- <div class="text-center">
+      <h1 id="title" class="heading">
+        <span style="display: none">Hello,</span>Learning DOM
+      </h1>
+      <h1 class="heading">2nd h1 This is Amazing</h1>
+      <h2>1st h2 Lets Learn</h2>
+      <h2>2nd h2 More you learn more you grow</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <script>
+      title.style.backgroundColor = 'orange'
+      title.innerText // shows all text content inside it *which is rendered on the page
+      title.textContent // shows all text content inside it
+      // * IMPORTANT
+      document.getElementById('title') // gives the element with the specified id
+      document.getElementsByClassName('heading') // gives a html collection []
+      document.querySelector('#title') // like css selector
+      document.querySelector('.heading') // gives first element that matches the querry
+      document.querySelectorAll('.heading') // gives a node list
+      title.innerHTML // shows all html content inside it
+
+      // To convert HTML collections, NodeList, Strings, Array like objects to arrays
+      Array.from()
+    </script> -->
+
+    <!-- <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <div class="day">Friday</div>
+    </div> -->
+
+    <ul class="language">
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </body>
+  <!-- <script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+    // console.log(Array.from(parent.children))
+    // for (let i = 0; i < parent.children.length; i++) {
+    //   if (i % 2 == 0) {
+    //     parent.children[i].style.color = 'orange'
+    //   } else {
+    //     parent.children[i].style.color = 'blue'
+    //   }
+    //   console.log(parent.children[i].innerHTML)
+    // }
+    const day1 = document.querySelector('.day')
+    // console.log(day1)
+    // console.log(day1.nextElementSibling)
+    // console.log(day1.parentElement)
+    console.log('Nodes:', parent.childNodes)
+  </script> -->
+  <!-- <script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = 'main'
+    div.id = '1'
+    div.style.backgroundColor = 'green'
+    div.style.padding = '12px'
+    div.innerText = 'Hi World\n'
+    const addText = document.createTextNode('Hi Ma')
+    div.appendChild(addText)
+    div.setAttribute('title', 'generated title') // more efficient way to set attributes
+    // div.setAttribute('innerHTML', '<h1>Hello Ma</h1>') // Not working!
+
+    document.body.appendChild(div)
+  </script> -->
+  <script>
+    function addLang(lang) {
+      const li = document.createElement('li')
+      li.className = 'text-red'
+      li.innerHTML = `${lang}`
+      document.querySelector('.language').appendChild(li)
+    } // Not Optimised
+    addLang('Java')
+    function addOptiLang(lang) {
+      const li = document.createElement('li')
+      li.className = 'text-green'
+      li.appendChild(document.createTextNode(lang))
+      document.querySelector('.language').appendChild(li)
+    } // more Optimised
+    addOptiLang('C++')
+    addOptiLang('Rust')
+
+    // Modifications in element
+    const secondLang = document.querySelector('language:nth-child(2)')
+    // secondLang.innerHTML •= "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+    secondLang.replaceWith(newli)
+    // function editLang(lang, i) {
+    // const selected_lang = document.querySelector(`language:nth-child(${i})`)
+    // const new_li = document.createElement('li')
+    // new_li.textContent = `Mojo`
+    // selected_lang.replaceWith(new_li)
+    // }
+    // editLang('Go', 2)
+  </script>
+</html>
