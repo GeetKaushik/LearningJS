@@ -1,0 +1,46 @@
+body {
+  background: #111;
+  color: beige;
+}
+h1 {
+  text-align: center;
+}
+
+#colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+#red {
+  background: red;
+}
+
+#green {
+  background: green;
+}
+
+#blue {
+  background: blue;
+}
+
+#reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
