@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Async JS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Learning about Async JS</h1>
+      <button id='stop'>Stop</button>
+    </header>
+  </body>
+  <script>
+    let timer = 1
+    setTimeout(() => {
+      console.log(`Hello World after ${timer} sec`)
+    }, timer * 1000)
+    let interval = 1
+    let count = 0
+    const displayMsg = () => {
+      console.log(`Count(${count++}): Hello World every ${interval} sec`)
+    }
+    // const displayInterval = setInterval(displayMsg, interval * 1000)
+    const stopBtn = document.querySelector('#stop')
+    stopBtn.addEventListener('click', () => {
+      console.log(`displayInterval Stoped at ${count}`)
+      clearInterval(displayInterval)
+      // clearTimeout() works similarly but for setTimeout
+    })
+  </script>
+</html>

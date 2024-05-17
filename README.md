@@ -32,4 +32,7 @@
   - `BMICalculator` - A Simple Project for creating a BMI calculator
   - `DigitalClock` - A Simple Project for creating a Digital Clock
   - `GuessTheNumber` - A Simple Project for creating a guess the number game
+  - `Counter` - Basic counter projrct to learn about Async JS
+  - `RandomColors` - Basic Random Color Generator to learn about Async JS
+  - `KeyboardCheck` - A simple keyboard key checker to learn about Async JS
 - ### Events

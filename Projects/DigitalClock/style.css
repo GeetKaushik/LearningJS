@@ -27,7 +27,6 @@ main {
   height: 10rem;
   width: 20rem;
   border-radius: 10px;
-  background-color: #fff;
   background-color: orange;
   display: flex;
   justify-content: center;
