@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: azure;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#banner {
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#clock {
+  height: 10rem;
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #fff;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock > h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
