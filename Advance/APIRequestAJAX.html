@@ -29,10 +29,11 @@
     xhr.open('GET', requestURL)
     console.log(xhr.readyState)
     xhr.onreadystatechange = function () {
+      // Arrow function does not work properly here
       console.log(xhr.readyState)
       if (xhr.readyState === 4) {
         const data = JSON.parse(this.response)
-        console.log(data.bio);
+        console.log(data.bio)
       }
     }
     xhr.send()
