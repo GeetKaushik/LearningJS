@@ -36,3 +36,5 @@
   - `RandomColors` - Basic Random Color Generator to learn about Async JS
   - `KeyboardCheck` - A simple keyboard key checker to learn about Async JS
 - ### Events
+- ### Advance
+  - `APIRequestAJAX` - Basic of API requests using AJAX
