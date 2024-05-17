@@ -31,3 +31,4 @@
   - `BgSwitcher` - A Simple Project for switching between background colors
   - `BMICalculator` - A Simple Project for creating a BMI calculator
   - `DigitalClock` - A Simple Project for creating a Digital Clock
+  - `GuessTheNumber` - A Simple Project for creating a guess the number game
