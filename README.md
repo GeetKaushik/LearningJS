@@ -39,3 +39,4 @@
 - ### Advance
   - `APIRequestAJAX` - Basic of API requests using AJAX
   - `Promises` - All about promises in JS
+  - `Prototype` - All about prototype in JS
