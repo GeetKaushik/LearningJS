@@ -42,3 +42,4 @@
   - `Prototype` - All about prototype in JS
   - `Classes` - All about classes in JS
   - `Bind` - All about bind in JS
+  - `GettersSetters` - All about getters and setters in JS
