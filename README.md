@@ -40,3 +40,5 @@
   - `APIRequestAJAX` - Basic of API requests using AJAX
   - `Promises` - All about promises in JS
   - `Prototype` - All about prototype in JS
+  - `Classes` - All about classes in JS
+  - `Bind` - All about bind in JS
